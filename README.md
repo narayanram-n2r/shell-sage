@@ -12,13 +12,7 @@ The primary goal of Shell Sage is to analyze user `bash_history` logs and identi
 
 - [Command Analysis](command_analysis.md) - Details on analyzing `bash_history` logs.
 - [Reinforcement Learning](reinforcement_learning.md) - Explanation of the PPO algorithm implementation.
-- [Useful Commands List](useful_commands_list.md) - Compilation of refined and expanded Linux command suggestions.
-
-### Python Scripts
-
-- `command_analyzer.py` - Script to parse and analyze `bash_history` logs.
-- `ppo_algorithm.py` - Implementation of the human-intervened PPO algorithm.
-- `useful_commands_generator.py` - Python script to generate a comprehensive list of useful Linux commands.
+- [Dataset](useful_commands_list.md) - Compilation of refined and expanded Linux command suggestions.
 
 ## Usage
 
