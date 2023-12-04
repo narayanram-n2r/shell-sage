@@ -45,6 +45,38 @@ Add a line to run your script at a desired frequency. For example, to run it eve
 ### 4. Test Your Setup
 After setting up the cron job, monitor training_history.txt to ensure that new entries are being appended as expected.
 
+### To refine the search functionality of your script to handle more specific queries like "gubuster common.txt", you can modify the script to search for multiple keywords in a single command line. This approach requires processing each line of your training_history.txt and checking if it contains all the specified keywords
+```
+#!/bin/bash
+
+# Path to the training history file
+TRAINING_HISTORY=~/training_history.txt
+
+# Function to check if a line contains all keywords
+containsAllKeywords() {
+    local line=$1
+    shift
+    for keyword in "$@"; do
+        if [[ $line != *$keyword* ]]; then
+            return 1
+        fi
+    done
+    return 0
+}
+
+# Main search logic
+searchHistory() {
+    while IFS= read -r line; do
+        if containsAllKeywords "$line" "$@"; then
+            echo "$line"
+        fi
+    done < "$TRAINING_HISTORY"
+}
+
+# Execute the search with provided arguments
+searchHistory "$@"
+
+```
 
 ### Stuff to consdier based on collected data
 
