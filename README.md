@@ -48,4 +48,4 @@ Contributions to Shell Sage are welcome! If you'd like to contribute, please fol
 This project is contributed to by:
 
 - [n2r](https://github.com/narayanram-n2r)
-- [summanthsec](https://github.com/summanthsec)
+- [sumanthsec](https://github.com/sumanthsec)
