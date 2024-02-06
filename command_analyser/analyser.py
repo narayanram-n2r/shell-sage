@@ -18,6 +18,13 @@ class Analyzer:
 
         return commands_dictionary
 
+    def refine_commands_with_gpt(commands):
+        refined_commands = []
+        for command in commands:
+            gpt_output = query_gpt(command)
+            refined_commands.append(gpt_output)
+        return refined_commands
+
 
 def main():
     bash_history_path = "~./bash_history"  # path/to/bash_history_file
