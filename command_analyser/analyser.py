@@ -13,7 +13,9 @@ class Analyzer:
         command_counter = CommandCounter(parsed_commands)
         command_count = command_counter.count_command_frequency()
 
-        sorted_commands = sorted(command_count.items(), key=lambda x: x[1], reverse=True)
+        sorted_commands = sorted(
+            command_count.items(), key=lambda x: x[1], reverse=True
+        )
         commands_dictionary = {cmd: freq for cmd, freq in sorted_commands}
 
         return commands_dictionary

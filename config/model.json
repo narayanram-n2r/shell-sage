@@ -1,0 +1,7 @@
+{
+    "api_key": "YOUR_API_KEY",
+    "api_endpoint": "YOUR_API_ENDPOINT",
+    "api_version": "2023-05-15",
+    "model" : "gpt-3.5-turbo",
+    "temperature": 0.5
+}

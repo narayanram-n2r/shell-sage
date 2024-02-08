@@ -10,7 +10,7 @@ class BashHistoryParser:
             print(f"File {self.file_path} does not exist.")
             return []
 
-        with open(self.file_path, 'r') as history_file:
+        with open(self.file_path, "r") as history_file:
             commands = history_file.readlines()
 
         return [cmd.strip() for cmd in commands]

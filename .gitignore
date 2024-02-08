@@ -161,3 +161,6 @@ cython_debug/
 
 # System specefics
 .secrets/
+
+# Visual Studio Code
+logs/
